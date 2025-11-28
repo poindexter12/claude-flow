@@ -1,0 +1,14 @@
+# <type>(<scope>): <subject>
+#
+# Types: feat, fix, docs, style, refactor, perf, test, build, ci, chore
+# Scope: optional, e.g. (auth), (api), (parser)
+# Subject: imperative mood, 50 chars max, no period
+#
+# Example: feat(auth): add OAuth2 login flow
+
+# Body (optional) - explain what and why, wrap at 72 chars
+
+
+# Footer (optional) - breaking changes, issue refs
+# BREAKING CHANGE: <description>
+# Refs: #123

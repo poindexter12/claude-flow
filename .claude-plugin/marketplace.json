@@ -1,0 +1,13 @@
+{
+  "name": "claude-flow",
+  "owner": {
+    "name": "poindexter12"
+  },
+  "plugins": [
+    {
+      "name": "claude-flow",
+      "source": ".",
+      "description": "Git workflow commands and the Will Haacket agent - a modern take on GitHub Flow aliases"
+    }
+  ]
+}

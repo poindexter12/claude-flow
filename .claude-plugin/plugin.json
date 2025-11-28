@@ -1,0 +1,9 @@
+{
+  "name": "claude-flow",
+  "description": "Git workflow commands and the Will Haacket agent - a modern take on GitHub Flow aliases",
+  "version": "0.1.0",
+  "author": {
+    "name": "poindexter12"
+  },
+  "repository": "https://github.com/poindexter12/claude-flow"
+}
