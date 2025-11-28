@@ -5,5 +5,23 @@
   "author": {
     "name": "poindexter12"
   },
-  "repository": "https://github.com/poindexter12/claude-flow"
+  "repository": "https://github.com/poindexter12/claude-flow",
+  "license": "MIT",
+  "keywords": ["git", "workflow", "github-flow", "conventional-commits"],
+  "agents": [
+    "./agents/will-haacket.md"
+  ],
+  "commands": [
+    "./commands/clean.md",
+    "./commands/done.md",
+    "./commands/save.md",
+    "./commands/start.md",
+    "./commands/sync.md",
+    "./commands/undo.md",
+    "./commands/wip.md"
+  ],
+  "skills": [
+    "./skills/branch-naming",
+    "./skills/conventional-commit"
+  ]
 }
