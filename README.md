@@ -25,9 +25,10 @@ A git workflow assistant that handles the interactive stuff:
 
 Invoke with: `@will-haacket commit and push`
 
-### Skill: conventional-commit
+### Skills
 
-Generates commit messages following [Conventional Commits](https://www.conventionalcommits.org/). Activated when you ask Claude to commit or write a commit message. Used by the Will Haacket agent.
+- **conventional-commit**: Generates commit messages following [Conventional Commits](https://www.conventionalcommits.org/). Used by the Will Haacket agent.
+- **branch-naming**: Generates consistent branch names from descriptions. Used by `/flow:start`.
 
 ## Installation
 
@@ -41,8 +42,9 @@ Generates commit messages following [Conventional Commits](https://www.conventio
 ## Usage
 
 ```bash
-# Start a feature
+# Start a feature (branch name or description)
 /flow:start add-user-auth
+/flow:start "add user authentication"
 
 # Work on your code...
 

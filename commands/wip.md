@@ -6,10 +6,11 @@ description: "Commit tracked changes as WIP (work in progress)"
 
 Commit only tracked (already staged or modified) files as a WIP commit. Unlike `save`, this doesn't add untracked files.
 
-## Commands
+## Instructions
 
-```bash
-git commit -am "wip: work in progress"
-```
+1. Commit tracked changes:
+   ```bash
+   git commit -am "wip: work in progress"
+   ```
 
-Uses Conventional Commits format. Report the result to the user. If nothing to commit, let the user know.
+2. Report the result to the user. If nothing to commit, let them know.

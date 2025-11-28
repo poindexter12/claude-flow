@@ -6,14 +6,16 @@ description: "Delete local branches that have been merged into default"
 
 Remove local branches that have already been merged into the default branch.
 
-## Commands
+## Instructions
 
-```bash
-# Get default branch
-DEFAULT=$(git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@')
+1. Get the default branch name:
+   ```bash
+   git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@'
+   ```
 
-# Delete merged branches (excluding default)
-git branch --merged | grep -v "\*" | grep -v "$DEFAULT" | xargs -n 1 git branch -d
-```
+2. Delete local branches that have been merged (excluding current and default):
+   ```bash
+   git branch --merged | grep -v "\*" | grep -v "<DEFAULT_BRANCH>" | xargs -n 1 git branch -d
+   ```
 
-Report which branches were deleted, or if none were found.
+3. Report which branches were deleted, or if none were found.

@@ -6,11 +6,16 @@ description: "Sync current branch with remote (pull with rebase and prune)"
 
 Update the current branch with latest changes from remote.
 
-## Commands
+## Instructions
 
-```bash
-git pull --rebase --prune
-git submodule update --init --recursive
-```
+1. Pull with rebase and prune stale remote branches:
+   ```bash
+   git pull --rebase --prune
+   ```
 
-Report the result to the user.
+2. If the repo has submodules, update them:
+   ```bash
+   git submodule update --init --recursive
+   ```
+
+3. Report the result to the user.

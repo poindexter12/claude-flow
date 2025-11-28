@@ -24,7 +24,9 @@ A Claude Code plugin providing git workflow commands and the Will Haacket agent.
 .claude-plugin/plugin.json  - Plugin manifest
 agents/                     - Will Haacket agent
 commands/                   - Flow commands (start, sync, save, wip, undo, done, clean)
-skills/conventional-commit/ - Conventional Commits skill
+skills/
+  conventional-commit/      - Conventional Commits skill
+  branch-naming/            - Branch naming conventions
 ```
 
 ## Conventions

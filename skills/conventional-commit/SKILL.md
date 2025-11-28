@@ -27,3 +27,7 @@ Generate commit messages following [Conventional Commits](https://www.convention
 - Use scope when the change is clearly in one area
 - If multiple unrelated changes, suggest splitting the commit
 - Match the project's existing commit style if they have one
+
+## Related
+
+The `branch-naming` skill uses matching prefixes (`feat/`, `fix/`, etc.) for a unified workflow.

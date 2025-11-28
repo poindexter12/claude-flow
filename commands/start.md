@@ -1,30 +1,32 @@
 ---
 description: "Start a new feature branch from updated default branch"
 arguments:
-  - name: branch
-    description: "Name of the new feature branch"
-    required: true
+  - name: input
+    description: "Branch name OR description of what you're working on"
+    required: false
 ---
 
 # Start Feature Branch
 
 Create and switch to a new feature branch after syncing with the default branch.
 
-## Steps
+## Instructions
 
-1. Detect the default branch (main, master, or develop)
-2. Checkout the default branch
-3. Pull latest with rebase and prune
-4. Create and checkout the new branch: `$ARGUMENTS.branch`
+1. **Determine the branch name:**
+   - If no input provided: Ask the user what they're working on
+   - If input looks like a branch name (kebab-case, no spaces): Use it directly
+   - If input is a description: Use the `branch-naming` skill to generate a name, then confirm with the user
 
-## Commands
+2. Get the default branch name:
 
-```bash
-# Get default branch
-git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@'
+   ```bash
+   git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@'
+   ```
 
-# Checkout default, pull, create new branch
-git checkout <default> && git pull --rebase --prune && git checkout -b $ARGUMENTS.branch
-```
+3. Checkout the default branch, pull latest, then create the new feature branch:
 
-Report the result to the user.
+   ```bash
+   git checkout <DEFAULT_BRANCH> && git pull --rebase --prune && git checkout -b <BRANCH_NAME>
+   ```
+
+4. Report the result to the user.
